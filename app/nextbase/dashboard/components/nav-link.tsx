@@ -2,7 +2,11 @@ import {
   UserGroupIcon,
   HomeIcon,
   DocumentDuplicateIcon,
+  PlusIcon,
 } from "@heroicons/react/24/outline";
+
+// Use it in your component
+<PlusIcon className="h-6 w-6" />;
 
 // Map of links to display in the side navigation.
 // Depending on the size of the application, this would be stored in a database.
