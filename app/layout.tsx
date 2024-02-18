@@ -5,18 +5,18 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Next Base",
-  description: "Backend by next js",
+    title: "Next Base",
+    description: "Backend by next js",
 };
 
 export default function RootLayout({
-  children,
+children,
 }: Readonly<{
-  children: React.ReactNode;
+children: React.ReactNode;
 }>) {
-  return (
+return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <body className={inter.className}>{children}</body>
     </html>
-  );
+);
 }
