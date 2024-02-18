@@ -4,6 +4,11 @@ const sqlite3 = require('sqlite3').verbose();
 
 let db = new sqlite3.Database('../db/normal.db');
 
+export function dbConn(): any {
+  let db = new sqlite3.Database('../db/normal.db');
+  return db
+}
+
 let sql = `CREATE TABLE IF NOT EXISTS users (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   name TEXT
